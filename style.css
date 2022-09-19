@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #12025b;
+    color: #fff;
+    padding: 1em;
+}
+
+.panel-container {
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 255, 0.3);
+    background: #180372;
+    box-shadow: 0 0 205px rgba(0, 0, 255, 0.5);
+    border-radius: 5px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 90%;
+}
+
+.panel-container strong {
+    line-height: 1.5em;
+    font-size: 1em;
+} 
+
+.ratings-container{
+    display: flex;
+    margin: 20px 0;
+   
+
+}
+
+.rating {
+    flex: 1;
+    cursor: pointer;
+    padding: 1.2em;
+    margin: 0.5em 0.2em;
+    
+}
+.rating:hover,
+.rating.active {
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+.rating.active {
+    border: 1px solid rgba(0, 0, 255, 0.5);
+}
+
+.rating img {
+    width: 40px;
+}
+
+.rating small {
+    display: inline-block;
+    color: #ffff;
+    margin: 10px 0 0;
+    
+}
+/* .rating small:hover,
+.rating small:active {
+    color: #000;
+} */
+
+.btn {
+    background: #12025b;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+    border: 1px solid rgba(0, 0, 255, 0.5);
+}
+
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.98);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+
+.fa-heart{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
